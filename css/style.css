@@ -1,0 +1,121 @@
+/* fichier style */
+
+
+
+/* police pour le h1 */
+@font-face {
+	font-family: 'Pacifico Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../polices/Pacifico.woff') format('woff'), url('../polices/Pacifico.ttf') format('ttf');
+}
+
+/* police pour le label */
+@font-face {
+	font-family: 'kaushanscript';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../polices/kaushanscript-regular-webfont.woff') format('woff'),
+		url('../polices/kaushanscript-regular-webfont.ttf') format('ttf'),
+		url('../polices/kaushanscript-regular-webfont.svg') format('svg'),
+		url('../polices/kaushanscript-regular-webfont.eot') format('eot');
+}
+h1 {
+	font-family : 'Pacifico Regular', arial, sans-serif;
+	font-size : 30px;
+	text-align:center;
+}
+
+body {
+	background-color : #C8C8C8;
+	margin:auto;
+	max-height:670px;
+}
+#bloc_page {
+	height:100%;
+}
+table {
+	margin:auto;
+	border-collapse: collapse;
+}
+#plateau tr {
+	width:100%;
+	height:10%;
+}
+#plateau tr td {
+	width:10%;
+	border:4px solid #DADADA;
+}
+.avatar {
+	width:100%;
+}
+.inaccessible {
+	background : url('../img/brique.jpg') no-repeat 0 0/100% 100%;
+}
+.autorisee {
+	box-shadow:-3px -3px 5px #000;
+	-webkit-box-shadow:-3px -3px 5px #000;
+	-moz-box-shadow:-3px -3px 5px #000;
+	-o-box-shadow:-3px -3px 5px #000;
+	-ms-box-shadow:-3px -3px 5px #000;
+}
+.couteau {
+	background : url('../img/couteau.png') no-repeat 0 0/100% 100%;
+}
+.fiole {
+	background : url('../img/fiole.png') no-repeat 0 0/100% 100%;
+}
+.batte_de_baseball {
+	background : url('../img/batte_de_baseball.png') no-repeat 0 0/100% 100%;
+}
+.hache {
+	background : url('../img/hache.png') no-repeat 0 0/100% 100%;
+}
+.pistolet {
+	background : url('../img/pistolet.png') no-repeat 0 0/100% 100%;
+}
+.info1, .info2 {
+	margin:15px;
+	font-size:20px;
+	font-family: 'kaushanscript', arial, sans-serif;
+	text-transform:capitalize;
+}
+#plateau {
+	background-color:#E0BB6F;
+	width:90%;
+	height:100%;
+}
+#tableau {
+	width:45%;
+	height:90%;
+}
+#divJoueur1, #tableau, #divJoueur2 {
+	display:inline-block;
+	vertical-align:middle;
+}
+#divJoueur1, #divJoueur2 {
+	height:90%;
+	width:23%;
+}
+#divJoueur1 {
+	background-color:#1BBC9B;
+}
+#divJoueur2 {
+	background-color:#FF656C;
+}
+.on {
+	border:15px solid #d7c828;
+}
+.off {
+	border:15px solid #C8C8C8;
+}
+label {
+	color : blue;
+}
+#son {
+	background:none;
+	position:absolute;
+	top:20px;
+	left:20px;
+}
+

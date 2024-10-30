@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="fr-FR">
+	<head>
+		<title>Jeu de plateau JavaScript</title>
+		<meta charset="utf-8" />
+		<!--Les balises structurantes de HTML5 sous IE6, IE7 et IE8 -->
+			<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+			<![endif]-->
+		<link rel="stylesheet" href="css/reset_css.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div id="bloc_page">
+			<h1>Jeu de plateau au tour par tour en Javascript.</h1>
+			<div id="divJoueur1">
+				<section>
+					<p><img src="img/avatar_icone.png" class="avatar" /></p>
+					<p class="info1"><label>Nom : </label></p>
+					<p class="info1"><label>Arme : </label></p>
+					<p class="info1"><label>Santé : </label></p>
+				</section>
+			</div>
+			<div id="tableau">
+				<table id="plateau">
+				</table>
+			</div>
+			<div id="divJoueur2">
+				<section>
+					<p><img src="img/avatar_icone2.png" class="avatar" /></p>
+					<p class="info2"><label>Nom : </label></p>
+					<p class="info2"><label>Arme : </label></p>
+					<p class="info2"><label>Santé : </label></p>
+				</section>
+			</div>
+			<button type="button" id="son"><img src="img/haut_parleur.png" /></button>
+			<audio preload="auto" class="ambiance" autoplay="autoplay" loop="loop">
+				<source src="audio/sample_jeu.mp3" type="audio/mp3">
+				<source src="audio/sample_jeu.ogg" type="audio/ogg">
+			</audio>
+			<audio  preload="auto" class="ambiance"  loop="loop">
+				<source src="audio/sample_combats.mp3" type="audio/mp3">
+				<source src="audio/sample_combats.ogg" type="audio/ogg">
+			</audio>
+			<audio preload="auto" class="ambiance">
+				<source src="audio/sample_coups.mp3" type="audio/mp3">
+				<source src="audio/sample_coups.ogg" type="audio/ogg">
+			</audio>
+			<audio preload="auto" class="ambiance">
+				<source src="audio/sample_mort.mp3" type="audio/mp3">
+				<source src="audio/sample_mort.ogg" type="audio/ogg">
+			</audio>
+		</div>
+		<script src="js/jquery-2.2.2.js"></script>
+		<script src="js/constantes.js"></script>
+		<script src="js/Joueur.js"></script>
+		<script src="js/affichage_plateau.js"></script>
+		<script src="js/gestion_carte.js"></script>
+		<script src="js/courte_paille.js"></script>
+		<script src="js/deplacement_joueur.js"></script>
+		<script src="js/audio.js"></script>
+		<script src="js/combats.js"></script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-85159820-3', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+	</body>
+</html>
